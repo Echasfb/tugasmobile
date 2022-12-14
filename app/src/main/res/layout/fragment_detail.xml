@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru_muda"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DetailFragment">
+
+    <FrameLayout
+        android:background="@color/kuning"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_gravity="center|start"
+            android:src="@drawable/icon_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:text="Detail Tugas"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp"
+        android:layout_marginTop="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="Judul Tugas"
+                android:textSize="12sp"
+                android:textColor="@color/hijau_tua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/mata_kuliah"
+                android:hint="Judul Tugas"
+                android:gravity="start|center"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/hijau_tua"
+                android:background="@drawable/bg_rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Kategori Tugas"
+                android:textSize="12sp"
+                android:textColor="@color/hijau_tua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/kategori_tugas"
+                android:hint="Judul Tugas"
+                android:gravity="start|center"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/hijau_tua"
+                android:background="@drawable/bg_rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:text="Detail Tugas"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/hijau_tua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/isi_tugas"
+                android:hint="Deskripsi Tugas"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:gravity="start"
+                android:textColor="@color/hijau_tua"
+                android:minHeight="200dp"
+                android:background="@drawable/bg_rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="Selesai"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/btn_selesai"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_rounded_edittext"
+                app:backgroundTint="@color/hijau_tua"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

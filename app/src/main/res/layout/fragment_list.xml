@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru_muda"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ListFragment">
+
+    <FrameLayout
+        android:background="@color/kuning"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:text="TaskMe"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#23154C"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyceTugas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            tools:listitem="@layout/adapter_task" />
+    </FrameLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_tugas"
+        app:tint="@color/white"
+        android:layout_gravity="center|bottom"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@color/hijau_tua"
+        android:src="@drawable/ic_add"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

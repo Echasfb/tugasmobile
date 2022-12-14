@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/klik"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/judul_tugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Judul"/>
+        <TextView
+            android:id="@+id/kategori_tugas"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:drawablePadding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            android:text="kategori tugas" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/edit"
+        android:src="@drawable/ic_edit"
+        android:layout_gravity="end"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        app:tint="#210572"
+        android:layout_width="12dp"
+        android:layout_height="12dp"/>
+
+</androidx.cardview.widget.CardView>
